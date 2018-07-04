@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
 
         <NavBar />
-        <Maincontent />
+        <Maincontent test ="my prop on app.js" />
         <Blog />
 
       {/* end app */}
