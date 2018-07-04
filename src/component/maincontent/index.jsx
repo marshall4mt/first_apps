@@ -22,15 +22,17 @@ class Maincontent extends Component {
     this.state.data.push({ list: input.value })
     this.setState({data: this.state.data})
 
-    // clear 
+    // clear input
      input.value = "";
     // console.log(input.value)
   }
   addTodoEnter (e) {
     if(e.keyCode  === 13){
       console.log('test ssss');
-        
     }
+  }
+  check () {
+    alert('call by other function');
   }
   // document.ready in jquery
   componentDidMount(){
