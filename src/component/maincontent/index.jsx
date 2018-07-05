@@ -66,7 +66,7 @@ class Maincontent extends Component {
             <thead>
               <tr>
                 <th scope="col" width="100">#</th>
-                <th scope="col" width="auto">First</th>
+                <th scope="col" width="auto">list</th>
               </tr>
             </thead>
             <tbody>  
