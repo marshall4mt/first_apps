@@ -18,21 +18,18 @@ class Maincontent extends Component {
 
   }
   addTodoList = () => {
-    const input = this.refs.todoList
-    this.state.data.push({ list: input.value })
-    this.setState({data: this.state.data})
-
+    let input = this.refs.todoList
+    if(input.value) {
+      this.state.data.push({ list: input.value })
+      this.setState({data: this.state.data})  
+    }
     // clear input
      input.value = "";
-    // console.log(input.value)
   }
-  addTodoEnter (e) {
+  addTodoEnter = (e) => {
     if(e.keyCode  === 13){
-      console.log('test ssss');
+      this.addTodoList()
     }
-  }
-  check () {
-    alert('call by other function');
   }
   // document.ready in jquery
   componentDidMount(){
@@ -46,7 +43,7 @@ class Maincontent extends Component {
         <div className="row">
           <div className="col-md-12">
             <div className="alert alert-info" role="alert">
-              this main page & {this.props.test}
+              this main page
             </div>
           </div>
         </div>
@@ -57,7 +54,7 @@ class Maincontent extends Component {
                 <label for="exampleInputEmail1">เพิ่มรายการ</label>
                 <input type="text" ref="todoList" className="form-control" onKeyDown={this.addTodoEnter} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someting"></input>
             </div>
-            <button className="btn btn-primary" onClick={() => this.addTodoList()}  >Add</button>
+            <button className="btn btn-primary" onClick={this.addTodoList}  >Add</button>
           </div>
         </div>
 
