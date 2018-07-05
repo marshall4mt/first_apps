@@ -1,6 +1,5 @@
 import React, { Component}  from 'react';
 import Layout from '../component/layout';
-import Blog from '../component/blog';
 
 class Page2 extends Component {
     
@@ -16,7 +15,7 @@ class Page2 extends Component {
                     </div>
                     <div className="row">
                         <div className="col-md-12">
-                            <Blog />
+                            ffff
                         </div>
                     </div>
                 </div>

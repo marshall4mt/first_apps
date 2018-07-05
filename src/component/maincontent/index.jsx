@@ -8,10 +8,10 @@ class Maincontent extends Component {
     this.state = {
       data: [
         {
-          list: 'กาแฟเย็น'
+          list: 'xxxxxx'
         },
         {
-          list: 'ชานมไข่มุก'
+          list: 'yyyyyy'
         }
       ]
     }
