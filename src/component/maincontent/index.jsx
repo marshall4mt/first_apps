@@ -32,7 +32,7 @@ class Maincontent extends Component {
     }
   }
   // document.ready in jquery
-  componentDidMount(){
+  componentDidMount() {
     this.refs.todoList.focus(); 
   }
 

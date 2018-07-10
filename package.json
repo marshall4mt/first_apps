@@ -38,6 +38,7 @@
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.1",
     "react-image-slideshow": "^1.5.4",
+    "react-meta-tags": "^0.4.1",
     "react-portal": "^4.1.5",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
